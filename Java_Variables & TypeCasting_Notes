@@ -1,0 +1,28 @@
+Topics to remember:
+VARIABLE TYPES:
+  CHAR-
+    a char is a variable that stores single character enclosed within single quotes 
+  STRING-
+    a string tyoe is a special type of variable that consists of multiple characters and is nclosed within double quotes
+  CONSTANTS-
+    a constant is a special type of variable that cannot be changed once it is initialised and to declare a constant we use the keyword final followed by the variable type
+    and variable name
+
+VARIABLE NAMING:
+   USE CAMELCASE- variable naming should start with a lowercase then upper case
+   CONSTANT NAME- is written in uppercase
+
+GENERAL RULES:
+  1. name should start with a letter  or underscore, dollar sign 
+  2. it should not start with a number 
+
+TYPE CASTING:
+process of converting a value from one data type to another. in java we can connvert it to double to int, int to double etc
+
+It is of two types-
+1. IMPLICIT CASTING ( automatic)- eg int to double 
+   int number=5;
+   double decimal=number; // now decimal=5.0
+2. EXPLICIT CASTING (manual)-eg. double to int
+   double decimal=9.7;
+   int number=(int)decimal;//here number=9 
