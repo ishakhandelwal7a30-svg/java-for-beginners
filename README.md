@@ -16,7 +16,7 @@ Hands-on practice programs
 🎯 Goal
 To provide a solid foundation in Java programming so beginners can confidently move on to building real-world applications.
 
-🚀 How to Use
+🚀 How to Use,
 Clone the repository
 
 Explore the code examples in each section
