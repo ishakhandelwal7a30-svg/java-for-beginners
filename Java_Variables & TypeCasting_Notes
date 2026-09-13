@@ -20,9 +20,26 @@ TYPE CASTING:
 process of converting a value from one data type to another. in java we can connvert it to double to int, int to double etc
 
 It is of two types-
-1. IMPLICIT CASTING ( automatic)- eg int to double 
+1. IMPLICIT CASTING ( automatic)-  int to double 
    int number=5;
    double decimal=number; // now decimal=5.0
-2. EXPLICIT CASTING (manual)-eg. double to int
+2. EXPLICIT CASTING (manual)- double to int
    double decimal=9.7;
    int number=(int)decimal;//here number=9 
+3. CONVERTION OF NUMBERS AND BOOLEAN TO STRING-
+    It is also possible to convert number and booleans to string and vice versa. To convert a value to string we can use the String.valueOf() function
+    int number1 = 789;
+    double number2 = 789;
+    boolean isValid = true;
+    String text1 = String.valueOf(number1); // becomes "789"
+    String text2 = String.valueOf(number2); // becomes "789.0"
+    String text3 = String.valueOf(isValid); // becomes "true"
+4.STRING TO INTEGER-
+    String numberText = "123";
+    int number = Integer.parseInt(numberText);    // becomes 123
+5.STRING TO DOUBLE-
+    String decimalText = "45.67";
+    double decimal = Double.parseDouble(decimalText);    // becomes 45.67
+6.STRING TO BOOLEAN
+    String boolText = "true";
+    boolean bool = Boolean.parseBoolean(boolText); // becomes true
