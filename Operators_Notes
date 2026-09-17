@@ -1,0 +1,98 @@
+ARITHMETIC OPERATORS:
+Operators are used to perform operationson values
+
+BASIC ARITHMETIC OPERATORS:
+
+OPERATORS     OPERATION
+   +          Addition
+   -          Substraction
+   *          Multiplication
+   /          Division
+
+MODULO OPERATOR:
+The modulo operator % gives the remainder of a division. In Java, it's used with a simple syntax:
+result = dividend % divisor;
+
+NOTE- Usually modulo is used for checking if a number is even or odd:
+      1.If a number is even, dividing it by 2 will leave a remainder of 0.
+      2.If a number is odd, dividing it by 2 will leave a remainder of 1.
+
+INCREMENT AND DECREMENT OPERATORS:
+Increment and decrement operators are used to increase or decrease the value of a variable by 1. These operators are widely used in programming, 
+especially in loops and counters.
+The increment operator is represented by two plus signs ++, and the decrement operator is represented by two minus signs --.
+
+For example, to increment a variable named count, you can use the increment operator like this:
+    int count = 5;
+    count++; // count is now 6
+
+Similarly, to decrement a variable named value, you can use the decrement operator like this:
+   int value = 10;
+   value--; // value is now 9
+
+POST OR PRE INCREMENT AND DECREMENT OPERATOR:
+Increment (++) and Decrement (--) operators can be used in two ways:
+#Pre-increment/decrement (++x or --x):
+    1.The operator goes BEFORE the variable
+    2.The value changes IMMEDIATELY
+    3.The new value is used in the expression
+For Example;
+     int x = 5;
+     int y = ++x;  // x is increased to 6 first, then y becomes 6
+
+#Post-increment/decrement (x++ or x--):
+    1.The operator goes AFTER the variable
+    2.The original value is used first
+    3.The value changes AFTER the expression
+For Example;
+      int x = 5;
+      int y = x++; // y becomes 5 first, then x increases to 6
+
+ARITHMETIC SHORTCUTS:
+Java created a cool shortcut for self-arithmetic operations.
+For example instead of writing:
+   int a = 5;
+   a = a + 3; // a holds 8,We can simplify it by writing +=:
+We write:
+   int a = 5;
+   a += 3; // a holds 8
+
+Operator	Shortcut
+   +     	+=
+   -      	-=
+   *      	*=
+   /     	/=
+   %     	%=
+
+COMPARISION OPERATORS:
+Comparison operators are used to compare between two operands.Sometimes we need to check whether an operand is bigger/smaller/... than another operand.
+The following table shows possible operators for comparison:
+
+Operator	Meaning	        Example
+==	       Equal	    1 == 2 returns false
+!=	     Not Equal	    1 != 2 returns true
+>	  Greater Than	    1 > 2 returns false
+<	   Less Than	    1 < 2 returns true
+>=  Greater or Equal	 1 >= 2 returns false
+<=	 Less or Equal	    1 <= 2 returns true
+
+For Example;
+    int var1 = 13;
+    int var2 = 12;
+    boolean var3 = var1 != var2; //The comparison operator returns true if the comparison is correct or false otherwise.
+
+STRING OPERATOR:
+In Java, comparing strings is different from comparing numbers. While you can use <, >, ==, etc., for numbers, strings require different methods
+because they are objects, not primitive.The most common and correct way to compare if two strings have the same content is using the equals() method:
+SYNTAX:
+    String str1 = "hello";
+    String str2 = "hello";
+    String str3 = "Hello";
+    boolean result1 = str1.equals(str2);  // true
+    boolean result2 = str1.equals(str3);  // false (case-sensitive)
+
+Using equalsIgnoreCase() If you want to compare strings without considering upper/lower case:
+SYNTAX:
+    String str1 = "Hello";
+    String str2 = "hello";
+    boolean result = str1.equalsIgnoreCase(str2);  // true
