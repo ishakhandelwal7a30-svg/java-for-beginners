@@ -40,7 +40,7 @@ For Example;
      int x = 5;
      int y = ++x;  // x is increased to 6 first, then y becomes 6
 
-#Post-increment/decrement (x++ or x--):
+Post-increment/decrement (x++ or x--):
     1.The operator goes AFTER the variable
     2.The original value is used first
     3.The value changes AFTER the expression
@@ -96,3 +96,47 @@ SYNTAX:
     String str1 = "Hello";
     String str2 = "hello";
     boolean result = str1.equalsIgnoreCase(str2);  // true
+
+LOGICAL OPEATOR:
+Logical operators are used to check combinations of comparisons that return true or false.
+
+Operator            Meaning	                     Example
+  &&       	And - true if all operands are true	   a && b
+  ||        Or - true if any operand is true	      a || b
+  !         Not- true if the operand is false	     !a
+Let's see some examples,
+
+Example:
+     boolean b1 = (5 > 3) && (1 == 1);   // holds true
+     boolean b2 = !(5 == 4) || (5 == 2); // holds true
+     boolean b3 = !(1 == 1) || false;   // holds false
+     boolean b4 = !(3 > 4);   // holds true
+     boolean b5 = !(5 > 10 || 5 > 1);  // holds false
+
+Truth table for the and (&&) operator:
+   a	 b	   a && b
+false	false	false
+false	true	false
+true	false	false
+true	true	true
+The only way to get a true for the and (&&) operator is if both a and b are true
+
+Truth table for the or (||) operator:
+
+  a	 b	   a || b
+false	false	false
+false	true	true
+true	false	true
+true	true	true
+In this case, to get a true result, either a or b should be true.
+
+Truth table for the not (!) operator:
+
+  a	!a
+false	true
+true	false
+Here the value of a is reversed. If a is false then !a is true
+
+
+
+
