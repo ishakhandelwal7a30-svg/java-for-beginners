@@ -1,0 +1,17 @@
+If Statement:
+If statements allow us to execute code with conditions.
+To use an if statement in Java, we need to use curly braces {} to define the code block, and everything inside the if statemen
+should be placed between these braces:
+Syantax-
+     if (condition) {
+         code;
+         code;
+         code;
+      }
+Example-
+    int age = 20;
+    String status = "Child";
+    if (age > 18) {
+        status = "Adult";
+     }
+    age += 1;  //In the end, the code will increment age by 1 whether the age is bigger than 18 or not.
