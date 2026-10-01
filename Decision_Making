@@ -15,3 +15,54 @@ Example-
         status = "Adult";
      }
     age += 1;  //In the end, the code will increment age by 1 whether the age is bigger than 18 or not.
+
+IF-ELSE STATEMENT:
+if allows us to execute particular code if a condition is met, but what if we want to execute something else if the condition is not met?
+For that we have the else statement:
+     int age = 15;
+     String status = "None";
+     if (age >= 18) {
+         status = "Adult";
+     } else {
+         status = "Young";
+     }
+In the above example, age is smaller than 18 which means it enters the else code, and status will hold "Young".
+We can even make it more profound using the else if statement:
+     int age = 68;
+     String status = "None";
+     if (age < 18) {
+         status = "Young";
+     } else if (age >= 18 && age <= 65) {
+         status = "Adult";
+     } else {
+         status = "Old";
+     }
+
+SWITCH STATEMENT:
+The switch statement is like a multi-way if statement. Instead of evaluating a single condition, it checks the value of a variable against multiple cases and 
+executes the code associated with the matching case.
+Here's the basic structure of a switch statement:
+      switch (variable) {
+            case value1:
+                     // Code to execute if variable equals value1
+             break;
+            case value2:
+                     // Code to execute if variable equals value2
+             break;
+                    // ... more cases
+             default:
+                    // Code to execute if no case matches
+     }
+
+1.The switch keyword is followed by the variable you want to test in parentheses.
+2.Each case represents a possible value of the variable.
+3.The code inside each case is executed if the variable matches that case's value.
+4.The break statement is crucial; it exits the switch after a case is executed. Without it, execution would "fall through" to the next case.
+5.The default case is optional and is executed if no other case matches.
+
+TERNARY OPERATOR:
+The ternary operator is a simple one-line if-else statement. It has the following syntax:
+     variable = (condition) ? value_if_true : value_if_false;
+For example;
+     int age = 20;
+     String message = (age >= 18) ? "Adult" : "Minor";
