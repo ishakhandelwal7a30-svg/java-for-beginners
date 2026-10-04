@@ -7,7 +7,8 @@ Print the result in the format: "The number is [positive/negative/zero]". */
 
 import java.util.Scanner;
 
-public class Ma {
+public class decision_making_4
+{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
