@@ -8,7 +8,7 @@ Autumn: September (9), October (10), November (11)
 For any other month number, print "Invalid month". */
 
 import java.util.Scanner; // where Scanner class is a pre defined class in java which is used to rake input from the user
-public class Main {
+public class decison_making_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);// this line deines the variable scanner to take input from the user where in parenthesis we need to write System.in
         int month = scanner.nextInt();
