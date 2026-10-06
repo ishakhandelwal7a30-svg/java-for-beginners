@@ -1,0 +1,13 @@
+FOR LOOP (PART 1):
+Sometimes when programming, it's necessary to perform the same or almost the same operation a couple of times.
+To prevent writing the same thing over and over again, we can use Loops.
+The for loop has the following syntax:
+      for (initialization; condition; update) {
+           code
+      }
+The initialization, condition and update determine what is the start value and what is the end value.
+For example, loop from 0 to 5 (not including):
+       for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+It will execute the print statement 5 times.
