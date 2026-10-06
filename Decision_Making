@@ -66,3 +66,27 @@ The ternary operator is a simple one-line if-else statement. It has the followin
 For example;
      int age = 20;
      String message = (age >= 18) ? "Adult" : "Minor";
+
+NESTED IF-ELSE STATEMENT:
+We can nest if-else if-else statements within each other. This allows us to create hierarchical decision-making structures.
+Keep in mind that deeply nested if statements can make code harder to read and maintain.
+For example:
+    if (age > 18) {
+        if (hasLicense) {
+            System.out.println("You can drive");
+         } else {
+            System.out.println("Get a license first");
+         }
+     } else {
+          System.out.println("Too young to drive");
+      }
+Syntax:
+if (condition1) {
+    if (condition2) {
+        if (condition3) {
+            // runs only when condition1, condition2 and condition3 are all true
+            ...
+        }
+    }
+}
+
