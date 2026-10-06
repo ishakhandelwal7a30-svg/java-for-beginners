@@ -11,3 +11,55 @@ For example, loop from 0 to 5 (not including):
             System.out.println(i);
         }
 It will execute the print statement 5 times.
+
+While Loop:
+A while loop is different from the for loop. A for loop allows us to iterate over a specific range, whereas a while loop allows us to keep iterating as long 
+as a certain condition is met.
+To use a while loop write:
+    while (condition) {
+        code
+    }
+The code will execute only if the condition is true.
+There are many use cases where a while would solve the problem, but the for loop would not.
+
+DO WHILE LOOP:
+The do-while loop is similar to the while loop, but with one key difference: the code block is executed at least once before the condition is checked.
+This means that the loop's body will always run the first time, regardless of whether the condition is true or false.
+Here's the basic structure of a do-while loop:
+     do {
+        // Code to be executed
+      } while (condition);
+The do keyword marks the beginning of the loop, followed by the code block in curly braces. After the code block, the while keyword introduces the condition.
+The loop will continue to execute as long as the condition is true.
+Here's an example:
+     int count = 0;
+     do {
+        System.out.println("Count: " + count);
+        count++;
+      } while (count < 5);
+In this example, the code inside the do block will execute first, printing "Count: 0" and incrementing count to 1. Then, the condition count < 5 is checked.
+Since it's true, the loop continues.
+This process repeats until count becomes 5, at which point the condition becomes false and the loop terminates.
+
+BREAK STATEMENT:
+The break statement stops the loop instantly when it's encountered.
+For example,
+   for (int i = 0; i < 10; i++) { 
+       if (i == 6) {
+           break;
+        }
+        System.out.println(i);
+    }
+In the following example the loop iterates regularly until it reaches number 6. Then the program enters the if statement and executes the break statement. 
+This exits the loop immediately. 
+
+CONTINUE STATEMENT:
+The continue statement stops the current iteration and continues to the next iteration.
+For example:
+     for (int i = 3; i < 9; i++) {
+         if (i == 5) {
+             continue;
+          }
+          System.out.println(i);
+      }
+The loop will iterate through all of the numbers. When it reaches i=5 it will skip that iteration and continue to the next one. 
